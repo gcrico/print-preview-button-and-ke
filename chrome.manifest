@@ -1,0 +1,5 @@
+content	gulz-print-preview-button	chrome/content/
+skin	gulz-print-preview-button	classic/1.0	chrome/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://gulz-print-preview-button/skin/toolbar.css
+overlay	chrome://browser/content/browser.xul	chrome://gulz-print-preview-button/content/browser.xul
+overlay	chrome://messenger/content/messenger.xul	chrome://gulz-print-preview-button/content/messenger.xul

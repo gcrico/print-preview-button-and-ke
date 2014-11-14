@@ -1,0 +1,4 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#gulz-print-preview-button, toolbar #gulz-print-preview-button, toolbar[iconsize='small'] #gulz-print-preview-button {
+	list-style-image: url("chrome://gulz-print-preview-button/skin/print-preview-button-16.png") !important;
+}

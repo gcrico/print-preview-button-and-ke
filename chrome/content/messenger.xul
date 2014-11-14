@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://messenger/locale/messenger.dtd">
+<?xml-stylesheet href="chrome://gulz-print-preview-button/skin/toolbar.css" type="text/css"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <keyset id="mailKeys">
+    <key
+      id="key_gulzPrintPreview"
+      key="&printCmd.key;"
+      modifiers="accel,alt,shift"
+      oncommand="goDoCommand('cmd_printpreview')"
+    />
+  </keyset>
+  <toolbarpalette id="MailToolbarPalette">
+    <!--
+    observes "button_print" instead of "cmd_printpreview"
+    because of "XXX print preview not currently supported - bug 497994 to implement"
+    in mail/base/content/specialTabs.js
+    -->
+    <toolbarbutton
+      id="gulz-print-preview-button"
+      class="toolbarbutton-1"
+      label="&printPreviewCmd.label;"
+      tooltiptext="&printPreviewCmd.label;"
+      observes="button_print"
+      command="cmd_printpreview"
+    />
+  </toolbarpalette>
+</overlay>

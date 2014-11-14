@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://browser/locale/browser.dtd">
+<?xml-stylesheet href="chrome://gulz-print-preview-button/skin/toolbar.css" type="text/css"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <keyset id="mainKeyset">
+    <key
+      id="key_gulzPrintPreview"
+      key="&printCmd.commandkey;"
+      modifiers="accel,alt,shift"
+      command="cmd_printPreview"
+    />
+  </keyset>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton
+      id="gulz-print-preview-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional"
+      label="&printPreviewCmd.label;"
+      tooltiptext="&printPreviewCmd.label;"
+      command="cmd_printPreview"
+    />
+  </toolbarpalette>
+</overlay>
